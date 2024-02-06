@@ -1,71 +1,65 @@
-* {
+*{
     margin: 0;
-    padding: 0;
+    padding:0;
     font-family: 'poppins';
     box-sizing: border-box;
 }
-
-#first {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(45deg, rgb(7, 73, 99), rgb(87, 9, 87));
+#first{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(45deg,rgb(7, 73, 99),rgb(87, 9, 87));
     color: white;
-    position: relative;
-}
+    position: fixed;
 
-#container {
-    width: 90%; /* Adjusted width for responsiveness */
-    max-width: 400px; /* Set maximum width for smaller screens */
-    height: auto; /* Change height to auto for content to expand */
+}
+#container{
+    width:50%;
+    height:23%;
     position: absolute;
-    top: 50%;
+    top:20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,50%);
+   
 }
-
-#clock {
-    width: 100%;
-    height: 100%;
-    background: rgba(235, 0, 2555, 0.11);
+#clock{
+    width:100%;
+    height:100%;
+    background: rgba(235,0,2555,0.11);
     border-radius: 10px;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(40px);
 }
-
-#container::before {
-    content: '';
-    width: 20%; /* Adjusted width for smaller screens */
-    height: 20%; /* Adjusted height for smaller screens */
-    background: #ff034b;
-    border-radius: 5px;
-    position: absolute;
-    left: -10%; /* Adjusted left position for smaller screens */
-    top: -10%; /* Adjusted top position for smaller screens */
+#container::before{
+    content:'';
+    width:16%;
+    height:70%;
+    background:#ff034b;
+    border-radius:5px;
+    position:absolute;
+    left:-50px;
+    top:-50px;
     z-index: -1;
 }
-
-#container::after {
-    content: '';
-    width: 20%; /* Adjusted width for smaller screens */
-    height: 20%; /* Adjusted height for smaller screens */
-    background: #48b0ff;
-    border-radius: 50%;
-    position: absolute;
-    right: -10%; /* Adjusted right position for smaller screens */
-    bottom: -10%; /* Adjusted bottom position for smaller screens */
+#container::after{
+    content:'';
+    width:16%;
+    height:70%;
+    background:#48b0ff;
+    border-radius:50%;
+    position:absolute;
+    right:-7.5%;
+    bottom:-50px;
     z-index: -1;
 }
-
-#clock span {
-    font-size: 4vw; /* Adjusted font size for responsiveness */
-    width: 30%; /* Adjusted width for smaller screens */
+#clock span{
+    font-size:80px;
+    width:110px;
     display: inline-block;
     position: relative;
     text-align: center;
 }
-
-#clock span::after {
-    transform: translate(-50%);
+#clock span::after{
+   transform:translate(-50%);
 }
